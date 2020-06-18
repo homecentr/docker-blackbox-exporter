@@ -1,6 +1,10 @@
 version: "3.7"
 services:
-  $$IMAGE_NAME$$:
+  prometheus-blackbox-exporter:
     build: .
-    image: homecentr/$$IMAGE_NAME$$
+    image: homecentr/prometheus-blackbox-exporter
+    ports:
+      - 9115:9115
+    volumes:
+      - ./example:/config
     restart: unless-stopped
