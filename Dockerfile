@@ -1,6 +1,6 @@
 FROM prom/blackbox-exporter:v0.17.0 as original
 
-FROM homecentr/base:2.4.0-alpine
+FROM homecentr/base:2.4.3-alpine
 
 ENV BLACKBOX_EXPORTER_ARGS=""
 
