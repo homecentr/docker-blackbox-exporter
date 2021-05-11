@@ -1,4 +1,4 @@
-FROM prom/blackbox-exporter:v0.17.0 as original
+FROM prom/blackbox-exporter:v0.19.0 as original
 
 FROM homecentr/base:2.4.3-alpine
 
